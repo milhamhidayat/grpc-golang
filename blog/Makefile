@@ -1,6 +1,6 @@
 .PHONY: proto
 proto:
-	@protoc -I . pb/pb.proto --go_out=plugins=grpc:.
+	@protoc -I . pb/blog.proto --go_out=plugins=grpc:.
 
 .PHONY: client
 client:
