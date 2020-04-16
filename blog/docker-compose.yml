@@ -3,6 +3,6 @@ version: "3.0"
 services:
   mongo:
     image: mongo:4.2
-    container_name: avalon_mongo
+    container_name: blog_mongo
     ports:
       - 27017:27017
