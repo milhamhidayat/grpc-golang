@@ -9,3 +9,11 @@ client:
 .PHONY: server
 server:
 	@go run server/main.go
+
+.PHONY: mongo-up
+mongo-up:
+	@docker-compose up -d mongo
+
+.PHONY: mongo-down
+mongo-down:
+	@docker stop avalon_mongo
